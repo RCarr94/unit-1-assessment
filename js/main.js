@@ -15,12 +15,14 @@ addOne.addEventListener("click", function () {
   getVal();
   addVal();
   counter.innerHTML = score;
+  makeRed();
 });
 
 subOne.addEventListener("click", function () {
   getVal();
   subVal();
   counter.innerHTML = score;
+  makeRed();
 });
 
 // Functions
@@ -35,4 +37,12 @@ function subVal() {
 
 function getVal() {
   currVal = document.getElementById("valInput").value;
+}
+
+function makeRed() {
+  if (score < 0) {
+    counter.classList.add("big-red");
+  } else if (score >= 0) {
+    counter.classList.remove("big-red");
+  }
 }
