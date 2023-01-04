@@ -10,17 +10,21 @@
 }
 
 .button {
-  background-color: grey;
+  background-color: rgb(169, 169, 169);
   width: 50px;
+  height: 15vh;
+  font-size: 25px;
   text-align: center;
   border-radius: 10%;
   color: white;
+  border: none;
 }
 
-/* #input {
-  border: 1px solid grey;
-  width: 100px;
+#valInput {
+  height: 90%;
+  width: 75px;
   border-radius: 10%;
   margin: 0 20px;
   text-align: center;
-} */
+  border: solid rgb(169, 169, 169) 3px;
+}
